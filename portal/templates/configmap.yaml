@@ -1,15 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: portal-configmap
-  annotations:
-    argocd.argoproj.io/health-check: |
-      apiVersion: v1
-      kind: ConfigMap
-      status: |
-        if .data.ori == "kerbis"
-        then "Healthy"
-        else "Degraded"
+  name: portal-configmap      
 data:
   ori: avi
   
