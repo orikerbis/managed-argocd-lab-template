@@ -3,5 +3,5 @@ kind: ConfigMap
 metadata:
   name: portal-configmap      
 data:
-  ori: kerbis
+  ori: avi
   
