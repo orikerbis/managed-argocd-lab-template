@@ -6,12 +6,12 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'https://github.com/<github-username>/managed-argocd-lab' # Update to match your fork.
+    repoURL: https://github.com/orikerbis/managed-argocd-lab-template
     path: guestbook
     targetRevision: HEAD
   destination:
-    namespace: guestbook
-    name: <environment-name> # Update this value.
+    server: https://kubernetes.default.svc
+    namespace: guestbook-app
   syncPolicy:
     syncOptions:
       - CreateNamespace=true

@@ -5,9 +5,9 @@ metadata:
   namespace: argocd
 spec:
   destination:
-    name: in-cluster
+    server: https://kubernetes.default.svc
   project: default
   source:
     path: apps
-    repoURL: https://github.com/<github-username>/managed-argocd-lab # Update to your repo URL.
+    repoURL: https://github.com/orikerbis/managed-argocd-lab-template
     targetRevision: HEAD

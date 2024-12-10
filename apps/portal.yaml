@@ -6,12 +6,12 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'https://github.com/<github-username>/managed-argocd-lab' # Update to match your fork.
+    repoURL: https://github.com/orikerbis/managed-argocd-lab-template
     path: portal
     targetRevision: HEAD
   destination:
-    namespace: portal
-    name: <environment-name> # Update this value.
+    server: https://kubernetes.default.svc
+    namespace: portal-app
   syncPolicy:
     syncOptions:
       - CreateNamespace=true
