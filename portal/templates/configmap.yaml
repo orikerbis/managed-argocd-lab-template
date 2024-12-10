@@ -11,5 +11,5 @@ metadata:
         then "Healthy"
         else "Degraded"
 data:
-  ori: kerbis
+  ori: avi
   
